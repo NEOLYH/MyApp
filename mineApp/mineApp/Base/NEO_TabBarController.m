@@ -86,11 +86,14 @@
         [navigationController setDelegate:self];
     }
     
-    NSArray *dataArray = @[@"主页", @"动态", @"附近", @"进货车", @"我"];
+    NSArray *dataArray = @[@"主页", @"动态", @"冒泡", @"进货车", @"我"];
     
-    NSArray *nImageArray = @[@"tab_home", @"home_icon_dynamic", @"tab_nearby", @"tab_cart", @"tab_me"];
+    //NSArray *nImageArray = @[@"tab_home", @"home_icon_dynamic", @"tab_nearby", @"tab_cart", @"tab_me"];
     
-    NSArray *sImgaearray = @[@"tab_home_pre", @"home_icon_dynamic_h", @"tab_nearby_pre", @"tab_cart_pre", @"tab_me_pre"];
+    //NSArray *sImgaearray = @[@"tab_home_pre", @"home_icon_dynamic_h", @"tab_nearby_pre", @"tab_cart_pre", @"tab_me_pre"];
+    
+     NSArray *nImageArray = @[@"project_normal", @"task_normal", @"tweet_normal", @"privatemessage_normal", @"me_normal"];
+    NSArray *sImgaearray = @[@"project_selected", @"task_selected", @"tweet_selected", @"privatemessage_selected", @"me_selected"];
     
     for (int i = 0; i < [self.viewControllers count]; i++) {
         [self setupTabBarItem:self.viewControllers[i]

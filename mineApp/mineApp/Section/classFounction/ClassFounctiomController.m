@@ -7,6 +7,7 @@
 //
 
 #import "ClassFounctiomController.h"
+#import "CeshiViewController.Swift"
 
 @interface ClassFounctiomController ()
 
@@ -17,6 +18,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    UIButton *button=[[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    button.backgroundColor=[UIColor redColor];
+    
+    [self.view addSubview:button];
+    
+    [button addTarget:self action:@selector(changeVC) forControlEvents:UIControlEventTouchUpInside];
+}
+
+-(void)changeVC{
+    
+ 
+
+    //[self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

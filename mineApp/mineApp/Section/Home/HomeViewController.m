@@ -23,6 +23,8 @@
     button.backgroundColor=[UIColor orangeColor];
     
     [button addTarget:self action:@selector(didClick) forControlEvents:UIControlEventTouchUpInside];
+    
+    
 }
 
 

@@ -7,7 +7,6 @@
 //
 
 #import "ClassFounctiomController.h"
-#import "CeshiViewController.Swift"
 
 @interface ClassFounctiomController ()
 

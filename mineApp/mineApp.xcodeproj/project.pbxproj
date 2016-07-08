@@ -2152,7 +2152,7 @@
 				898FF56C1D29E96F00573B01 /* Home */,
 				898FF5711D29E96F00573B01 /* Login */,
 				898FF5761D29E96F00573B01 /* PerSonal */,
-				898FF5791D29E96F00573B01 /* ShopingCart */,
+				898FF5791D29E96F00573B01 /* Messege */,
 			);
 			path = Section;
 			sourceTree = "<group>";
@@ -2206,12 +2206,13 @@
 			path = PerSonal;
 			sourceTree = "<group>";
 		};
-		898FF5791D29E96F00573B01 /* ShopingCart */ = {
+		898FF5791D29E96F00573B01 /* Messege */ = {
 			isa = PBXGroup;
 			children = (
 				898FF57A1D29E96F00573B01 /* ShopingCarViewController.h */,
 				898FF57B1D29E96F00573B01 /* ShopingCarViewController.m */,
 			);
+			name = Messege;
 			path = ShopingCart;
 			sourceTree = "<group>";
 		};

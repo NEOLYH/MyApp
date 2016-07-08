@@ -15,8 +15,26 @@
 @implementation ShopingCarViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.title=@"消息";
+    
+    //设置导航栏的title文字颜色以及大小
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     
+     @{NSFontAttributeName:[UIFont systemFontOfSize:18],
+       
+       NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    
+    [self.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"tweetBtn_Nav"] style:UIBarButtonItemStylePlain target:self action:@selector(sendMsgBtnClicked:)] animated:NO];
+    
+    
+}
+
+-(void)sendMsgBtnClicked:(UIButton * )button{
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

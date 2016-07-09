@@ -49,7 +49,8 @@
         // 设置返回按钮
         
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStylePlain target:self action:@selector(goBack)];
-        viewController.navigationItem.leftBarButtonItem.image=[UIImage imageNamed:@"back"];
+        
+        viewController.navigationItem.leftBarButtonItem.image=[UIImage imageNamed:@"fanhui"];
         
         // 隐藏底部的 TabBar
         viewController.hidesBottomBarWhenPushed = YES;
@@ -76,6 +77,14 @@
     [self popViewControllerAnimated:YES];
 }
 
+
+#pragma mark - 设置状态栏
+
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    
+    return UIStatusBarStyleLightContent;
+    
+}
 
 
 - (void)didReceiveMemoryWarning {

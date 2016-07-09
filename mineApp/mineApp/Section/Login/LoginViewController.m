@@ -14,7 +14,6 @@
 @interface LoginViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *button;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *callBack;
 
 
 @end
@@ -22,13 +21,26 @@
 @implementation LoginViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
+    
+    self.title=@"登录";
  
     [self.button addTarget:self action:@selector(push) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *bacBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
     
-    self.navigationItem.backBarButtonItem =
+    UIBarButtonItem *bacBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"fanhui"] style:UIBarButtonItemStylePlain target:self action:@selector(callBack)];
+    
+    self.navigationItem.leftBarButtonItem =
     bacBarButtonItem;
+    
+    //设置导航栏的title文字颜色以及大小
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     
+     @{NSFontAttributeName:[UIFont systemFontOfSize:18],
+       
+       NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    
+
 }
 
 
@@ -47,8 +59,6 @@
 -(void)push{
     
     SignViewController *signVC=[[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateViewControllerWithIdentifier:@"SignViewController"];
-
-    
     
     [self.navigationController pushViewController:signVC animated:YES];
     
@@ -56,7 +66,7 @@
 
 
 
-- (IBAction)callBack:(id)sender {
+- (void)callBack {
     
     
    [self dismissViewControllerAnimated:YES completion:nil]; 
@@ -67,15 +77,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

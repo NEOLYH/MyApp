@@ -40,9 +40,9 @@
 
 -(void)setTabBarControllers{
 
-    self.tabBar.tintColor = [UIColor colorWithRed:250/255.0 green:102/255.0 blue:73/255.0 alpha:1];
-    
-    self.tabBar.barTintColor = [UIColor lightGrayColor];
+   self.tabBar.tintColor = [UIColor colorWithRed:65/255.0 green:179/255.0 blue:94/255.0 alpha:1];
+
+    self.tabBar.barTintColor=[UIColor colorWithRed:30/255.0 green:36/255.0 blue:46/255.0 alpha:1];
     
     self.tabBar.translucent = YES;
     

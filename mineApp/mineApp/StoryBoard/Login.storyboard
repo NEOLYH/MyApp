@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -46,16 +46,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zmP-v1-sl0">
-                        <barButtonItem key="leftBarButtonItem" image="back" id="zKZ-25-7gR">
-                            <connections>
-                                <action selector="callBack:" destination="oeD-rg-ixg" id="VSz-XP-xef"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" id="Qr6-ke-gui"/>
                     </navigationItem>
                     <connections>
                         <outlet property="button" destination="snj-uj-8Vk" id="3bC-jt-XRX"/>
-                        <outlet property="callBack" destination="zKZ-25-7gR" id="Eq0-MO-ZEl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GUl-u8-eFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -82,7 +76,4 @@
             <point key="canvasLocation" x="950" y="349"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="back" width="12" height="24"/>
-    </resources>
 </document>

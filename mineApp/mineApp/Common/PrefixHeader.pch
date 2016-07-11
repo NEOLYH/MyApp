@@ -1,0 +1,17 @@
+//
+//  PrefixHeader.pch
+//  mineApp
+//
+//  Created by mac1 on 16/7/9.
+//  Copyright © 2016年 陆玉洪. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define kScreenW [UIScreen mainScreen].bounds.size.width
+#define kScreenH [UIScreen mainScreen].bounds.size.height
+
+
+
+#endif /* PrefixHeader_pch */

@@ -794,6 +794,8 @@
 		89A460CF1D30A55A00E3D39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A460CA1D30A55A00E3D39A /* main.m */; };
 		89A460D01D30A55A00E3D39A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89A460CB1D30A55A00E3D39A /* Main.storyboard */; };
 		89A460D11D30A55A00E3D39A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A460CD1D30A55A00E3D39A /* ViewController.m */; };
+		89A460D61D30D23700E3D39A /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A460D51D30D23700E3D39A /* VideoCell.m */; };
+		89A460DB1D30E8AA00E3D39A /* VedioModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A460DA1D30E8AA00E3D39A /* VedioModel.m */; };
 		89E987741D2B40BB001969FF /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E987731D2B40BB001969FF /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -1602,6 +1604,11 @@
 		89A460CB1D30A55A00E3D39A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		89A460CC1D30A55A00E3D39A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		89A460CD1D30A55A00E3D39A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		89A460D21D30C9C600E3D39A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		89A460D41D30D23700E3D39A /* VideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCell.h; sourceTree = "<group>"; };
+		89A460D51D30D23700E3D39A /* VideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
+		89A460D91D30E8AA00E3D39A /* VedioModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VedioModel.h; sourceTree = "<group>"; };
+		89A460DA1D30E8AA00E3D39A /* VedioModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VedioModel.m; sourceTree = "<group>"; };
 		89E987731D2B40BB001969FF /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		DE487165E9D96230D7CBE1CC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -2601,6 +2608,8 @@
 		898FF5691D29E96F00573B01 /* Finder */ = {
 			isa = PBXGroup;
 			children = (
+				89A460D81D30E86B00E3D39A /* Model */,
+				89A460D31D30D1E200E3D39A /* View */,
 				898FF56A1D29E96F00573B01 /* FinderViewController.h */,
 				898FF56B1D29E96F00573B01 /* FinderViewController.m */,
 			);
@@ -2939,8 +2948,27 @@
 				89A460CB1D30A55A00E3D39A /* Main.storyboard */,
 				89A460CC1D30A55A00E3D39A /* ViewController.h */,
 				89A460CD1D30A55A00E3D39A /* ViewController.m */,
+				89A460D21D30C9C600E3D39A /* PrefixHeader.pch */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		89A460D31D30D1E200E3D39A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89A460D41D30D23700E3D39A /* VideoCell.h */,
+				89A460D51D30D23700E3D39A /* VideoCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		89A460D81D30E86B00E3D39A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				89A460D91D30E8AA00E3D39A /* VedioModel.h */,
+				89A460DA1D30E8AA00E3D39A /* VedioModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		89E987721D2B4085001969FF /* StoryBoard */ = {
@@ -3861,7 +3889,9 @@
 				898FF5811D29E96F00573B01 /* SignViewController.m in Sources */,
 				898FF5641D29E4DC00573B01 /* NEO_ViewController.m in Sources */,
 				89A460CF1D30A55A00E3D39A /* main.m in Sources */,
+				89A460DB1D30E8AA00E3D39A /* VedioModel.m in Sources */,
 				898FF5621D29E4DC00573B01 /* NEO_NavigationController.m in Sources */,
+				89A460D61D30D23700E3D39A /* VideoCell.m in Sources */,
 				898FF5801D29E96F00573B01 /* LoginViewController.m in Sources */,
 				898FF5821D29E96F00573B01 /* PersonalViewController.m in Sources */,
 			);
@@ -3967,8 +3997,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				GCC_PREFIX_HEADER = /Users/mac1/Desktop/MyApp/mineApp/mineApp/Common/PrefixHeader.pch;
 				INFOPLIST_FILE = mineApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = neo.mineApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3983,8 +4014,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				GCC_PREFIX_HEADER = /Users/mac1/Desktop/MyApp/mineApp/mineApp/Common/PrefixHeader.pch;
 				INFOPLIST_FILE = mineApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = neo.mineApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

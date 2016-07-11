@@ -1,5 +1,21 @@
 PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
   - APParallaxHeader (0.1.6)
+  - BarrageRenderer (1.7.0)
   - BlocksKit (2.2.5):
     - BlocksKit/All (= 2.2.5)
   - BlocksKit/All (2.2.5):
@@ -23,6 +39,8 @@ PODS:
   - MarqueeLabel (2.5.0)
   - Masonry (0.5.3)
   - MBProgressHUD (0.9)
+  - MJExtension (3.0.11)
+  - MJRefresh (3.1.9)
   - MMMarkdown (0.3)
   - NYXImagesKit (2.3)
   - pop (1.0.9)
@@ -63,6 +81,9 @@ PODS:
     - RBBAnimation (~> 0.3)
     - SDCAutoLayout (~> 2.0)
   - SDCAutoLayout (2.0.3)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
   - SSKeychain (1.2.3)
   - TMCache (2.1.0)
   - TPKeyboardAvoiding (1.2.4)
@@ -70,7 +91,9 @@ PODS:
   - UIImage+BlurredFrame (0.0.4)
 
 DEPENDENCIES:
+  - AFNetworking
   - APParallaxHeader (= 0.1.6)
+  - BarrageRenderer (= 1.7.0)
   - BlocksKit (= 2.2.5)
   - evernote-cloud-sdk-ios (= 2.0.2)
   - hpple (= 0.2.0)
@@ -79,6 +102,8 @@ DEPENDENCIES:
   - MarqueeLabel (= 2.5.0)
   - Masonry (= 0.5.3)
   - MBProgressHUD (= 0.9)
+  - MJExtension
+  - MJRefresh
   - MMMarkdown (= 0.3)
   - NYXImagesKit (= 2.3)
   - POP+MCAnimate (= 2.0.1)
@@ -86,6 +111,7 @@ DEPENDENCIES:
   - ReactiveCocoa (= 2.3.1)
   - RegexKitLite-NoWarning (= 1.1.0)
   - SDCAlertView (= 2.5.2)
+  - SDWebImage
   - SSKeychain (= 1.2.3)
   - TMCache (= 2.1.0)
   - TPKeyboardAvoiding (= 1.2.4)
@@ -93,7 +119,9 @@ DEPENDENCIES:
   - UIImage+BlurredFrame (= 0.0.4)
 
 SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   APParallaxHeader: 854bc48a2487ca12c702f8a236fec0d89cdac5c3
+  BarrageRenderer: 94dd70c2ddfb399c15560301d79c3a8d9c891684
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   evernote-cloud-sdk-ios: 7a6e5402b837ea79ef0179caff5ffe7b4f235615
   FontAwesome+iOS: 9070b682a9255ca0fdc34bcfb129ad0ba2b73b87
@@ -103,6 +131,8 @@ SPEC CHECKSUMS:
   MarqueeLabel: 6b8ff6915c0536c5099ac30992b7d72f9807df20
   Masonry: 9f515466afe48632562342a40a1c224071a1a022
   MBProgressHUD: d8e7ea388dc1549a42e0d219067cf5f2c898fb66
+  MJExtension: f9ae6ddc0f1c482c3c9af750280ccebd14381958
+  MJRefresh: c5f1f1653e5a1b932c90f78074f2bc86f3f9bd5e
   MMMarkdown: 13af1af50e5f476f1097797f43ea2bd76c83067a
   NYXImagesKit: 8163e3335a40eaa173ca5bbbf81fafb57d3947eb
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
@@ -113,6 +143,7 @@ SPEC CHECKSUMS:
   RegexKitLite-NoWarning: 365d208f8187997e33d9de8baeddfc00728596d8
   SDCAlertView: f9706c18f456ea87909f8f199704cd28e582ff27
   SDCAutoLayout: e6885bb39ab8e2ec2ff84d158f38035f025f7420
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   SSKeychain: 3f42991739c6c60a9cf1bbd4dff6c0d3694bcf3d
   TMCache: 95ebcc9b3c7e90fb5fd8fc3036cba3aa781c9bed
   TPKeyboardAvoiding: 0a40dfbb0af7c8bdae1dd457496dccfd217d85f6

@@ -59,11 +59,13 @@ install_resource()
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "FontAwesome+iOS/Resources/FontAwesome.ttf"
+  install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "evernote-cloud-sdk-ios/ENSDKResources.bundle"
   install_resource "iVersion/iVersion/iVersion.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "FontAwesome+iOS/Resources/FontAwesome.ttf"
+  install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "evernote-cloud-sdk-ios/ENSDKResources.bundle"
   install_resource "iVersion/iVersion/iVersion.bundle"
 fi

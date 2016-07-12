@@ -115,7 +115,7 @@
         
         if ([[navigationController.viewControllers firstObject] isKindOfClass:[PersonalViewController class]]) {
             
-            if (![Muser sharedUser].isLogin) {
+            if ([Muser sharedUser].isLogin) {
                 _selectViewControllerIndex = 4;
                 
                LoginViewController *login = [[UIStoryboard storyboardWithName:@"Login" bundle:nil] instantiateViewControllerWithIdentifier:@"LoginViewController"];

@@ -1609,6 +1609,7 @@
 		89A460D51D30D23700E3D39A /* VideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
 		89A460D91D30E8AA00E3D39A /* VedioModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VedioModel.h; sourceTree = "<group>"; };
 		89A460DA1D30E8AA00E3D39A /* VedioModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VedioModel.m; sourceTree = "<group>"; };
+		89AF11FB1D349C8F0046F04C /* Contant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contant.h; sourceTree = "<group>"; };
 		89E987731D2B40BB001969FF /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		DE487165E9D96230D7CBE1CC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -2949,6 +2950,7 @@
 				89A460CC1D30A55A00E3D39A /* ViewController.h */,
 				89A460CD1D30A55A00E3D39A /* ViewController.m */,
 				89A460D21D30C9C600E3D39A /* PrefixHeader.pch */,
+				89AF11FB1D349C8F0046F04C /* Contant.h */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -3997,7 +3999,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				GCC_PREFIX_HEADER = /Users/mac1/Desktop/MyApp/mineApp/mineApp/Common/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/mac1/Desktop/mineApp/mineApp/mineApp/Common/PrefixHeader.pch;
 				INFOPLIST_FILE = mineApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -4014,7 +4016,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				GCC_PREFIX_HEADER = /Users/mac1/Desktop/MyApp/mineApp/mineApp/Common/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/mac1/Desktop/mineApp/mineApp/mineApp/Common/PrefixHeader.pch;
 				INFOPLIST_FILE = mineApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

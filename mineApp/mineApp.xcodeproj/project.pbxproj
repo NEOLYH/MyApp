@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1590A7269B3255DFE8295AF4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F166E95049C0FA9A8D24C07 /* libPods.a */; };
+		898BEEE51D37460800941321 /* NEO_AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 898BEEE41D37460800941321 /* NEO_AlertView.m */; };
 		898FF0C71D26327B00573B01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 898FF0C61D26327B00573B01 /* Assets.xcassets */; };
 		898FF0CA1D26327B00573B01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 898FF0C81D26327B00573B01 /* LaunchScreen.storyboard */; };
 		898FF3351D29E3D200573B01 /* add_user_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 898FF0E61D29E3D000573B01 /* add_user_icon@2x.png */; };
@@ -796,12 +797,15 @@
 		89A460D11D30A55A00E3D39A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A460CD1D30A55A00E3D39A /* ViewController.m */; };
 		89A460D61D30D23700E3D39A /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A460D51D30D23700E3D39A /* VideoCell.m */; };
 		89A460DB1D30E8AA00E3D39A /* VedioModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A460DA1D30E8AA00E3D39A /* VedioModel.m */; };
+		89AF12001D34C91E0046F04C /* userHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AF11FF1D34C91E0046F04C /* userHeaderView.m */; };
 		89E987741D2B40BB001969FF /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E987731D2B40BB001969FF /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0BBD4FD08ADBD0985A01F39A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5F166E95049C0FA9A8D24C07 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		898BEEE31D37460800941321 /* NEO_AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEO_AlertView.h; sourceTree = "<group>"; };
+		898BEEE41D37460800941321 /* NEO_AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEO_AlertView.m; sourceTree = "<group>"; };
 		898FF0B71D26327B00573B01 /* mineApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mineApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		898FF0C61D26327B00573B01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		898FF0C91D26327B00573B01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -1610,6 +1614,8 @@
 		89A460D91D30E8AA00E3D39A /* VedioModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VedioModel.h; sourceTree = "<group>"; };
 		89A460DA1D30E8AA00E3D39A /* VedioModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VedioModel.m; sourceTree = "<group>"; };
 		89AF11FB1D349C8F0046F04C /* Contant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contant.h; sourceTree = "<group>"; };
+		89AF11FE1D34C91E0046F04C /* userHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = userHeaderView.h; sourceTree = "<group>"; };
+		89AF11FF1D34C91E0046F04C /* userHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = userHeaderView.m; sourceTree = "<group>"; };
 		89E987731D2B40BB001969FF /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		DE487165E9D96230D7CBE1CC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1635,6 +1641,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		898BEEE21D3745C100941321 /* Categery */ = {
+			isa = PBXGroup;
+			children = (
+				898BEEE31D37460800941321 /* NEO_AlertView.h */,
+				898BEEE41D37460800941321 /* NEO_AlertView.m */,
+			);
+			path = Categery;
+			sourceTree = "<group>";
+		};
 		898FF0AE1D26327B00573B01 = {
 			isa = PBXGroup;
 			children = (
@@ -1656,6 +1671,7 @@
 		898FF0B91D26327B00573B01 /* mineApp */ = {
 			isa = PBXGroup;
 			children = (
+				898BEEE21D3745C100941321 /* Categery */,
 				89A460C71D30A4E800E3D39A /* Common */,
 				89E987721D2B4085001969FF /* StoryBoard */,
 				898FF5841D29E9BB00573B01 /* Libriry */,
@@ -2574,11 +2590,11 @@
 		898FF55B1D29E48F00573B01 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				898FF5601D29E4DC00573B01 /* NEO_ViewController.h */,
 				898FF55C1D29E4DC00573B01 /* NEO_NavigationController.h */,
 				898FF55D1D29E4DC00573B01 /* NEO_NavigationController.m */,
 				898FF55E1D29E4DC00573B01 /* NEO_TabBarController.h */,
 				898FF55F1D29E4DC00573B01 /* NEO_TabBarController.m */,
+				898FF5601D29E4DC00573B01 /* NEO_ViewController.h */,
 				898FF5611D29E4DC00573B01 /* NEO_ViewController.m */,
 			);
 			path = Base;
@@ -2642,6 +2658,8 @@
 		898FF5761D29E96F00573B01 /* PerSonal */ = {
 			isa = PBXGroup;
 			children = (
+				89AF11FD1D34C8D50046F04C /* Model */,
+				89AF11FC1D34C8BF0046F04C /* View */,
 				898FF5771D29E96F00573B01 /* PersonalViewController.h */,
 				898FF5781D29E96F00573B01 /* PersonalViewController.m */,
 			);
@@ -2969,6 +2987,22 @@
 			children = (
 				89A460D91D30E8AA00E3D39A /* VedioModel.h */,
 				89A460DA1D30E8AA00E3D39A /* VedioModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		89AF11FC1D34C8BF0046F04C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89AF11FE1D34C91E0046F04C /* userHeaderView.h */,
+				89AF11FF1D34C91E0046F04C /* userHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		89AF11FD1D34C8D50046F04C /* Model */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -3885,12 +3919,14 @@
 				898FF5831D29E96F00573B01 /* ShopingCarViewController.m in Sources */,
 				898FF5891D29E9BC00573B01 /* Muser.m in Sources */,
 				89A460CE1D30A55A00E3D39A /* AppDelegate.m in Sources */,
+				89AF12001D34C91E0046F04C /* userHeaderView.m in Sources */,
 				898FF5631D29E4DC00573B01 /* NEO_TabBarController.m in Sources */,
 				898FF57F1D29E96F00573B01 /* NextViewController.m in Sources */,
 				898FF57E1D29E96F00573B01 /* HomeViewController.m in Sources */,
 				898FF5811D29E96F00573B01 /* SignViewController.m in Sources */,
 				898FF5641D29E4DC00573B01 /* NEO_ViewController.m in Sources */,
 				89A460CF1D30A55A00E3D39A /* main.m in Sources */,
+				898BEEE51D37460800941321 /* NEO_AlertView.m in Sources */,
 				89A460DB1D30E8AA00E3D39A /* VedioModel.m in Sources */,
 				898FF5621D29E4DC00573B01 /* NEO_NavigationController.m in Sources */,
 				89A460D61D30D23700E3D39A /* VideoCell.m in Sources */,

@@ -14,5 +14,6 @@
 
 #import "Contant.h"
 
+#import "UIImageView+HighlightedWebCache.h"
 
 #endif /* PrefixHeader_pch */

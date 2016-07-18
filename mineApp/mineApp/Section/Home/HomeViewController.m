@@ -11,6 +11,9 @@
 
 @interface HomeViewController ()
 
+@property (nonatomic,strong)UIButton *leftNavBtn;
+@property (nonatomic,strong)UIButton *rightNavBtn;
+
 @end
 
 @implementation HomeViewController
@@ -27,9 +30,29 @@
     
     [button addTarget:self action:@selector(didClick) forControlEvents:UIControlEventTouchUpInside];
     
+    [self setupNavBtn];
     
 }
 
+
+
+- (void)setupNavBtn{
+    
+    [self.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon_project_cell_pin@2x"] style:UIBarButtonItemStylePlain target:self action:@selector(settingBtnClicked:)] animated:NO];
+    
+    [self.navigationItem setLeftBarButtonItem:[[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"filtertBtn_normal_Nav"] style:UIBarButtonItemStylePlain target:self action:@selector(addUserBtnClicked:)] animated:NO];
+    
+}
+
+
+-(void)settingBtnClicked:(UIButton *)button{
+    
+    
+}
+
+-(void)addUserBtnClicked:(UIButton *)button{
+    
+}
 
 #pragma mark 跳转
 

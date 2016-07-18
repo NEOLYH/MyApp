@@ -75,11 +75,11 @@ static NSString *registerID = @"cell";
     
     FlowLayout.sectionInset = UIEdgeInsetsMake(0, 5, 0, 5);
     
-    _myCollectionVC=[[UICollectionView alloc] initWithFrame:CGRectMake(0, 154, kScreenW, kScreenH-64) collectionViewLayout:FlowLayout];
+    _myCollectionVC=[[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, kScreenW, kScreenH-64) collectionViewLayout:FlowLayout];
     
     [self.view addSubview:_myCollectionVC];
     
-    _myCollectionVC.backgroundColor = [UIColor orangeColor];
+    _myCollectionVC.backgroundColor = [UIColor whiteColor];
     
     _myCollectionVC.pagingEnabled = YES;
     

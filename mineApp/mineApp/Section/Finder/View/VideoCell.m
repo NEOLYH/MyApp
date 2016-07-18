@@ -55,6 +55,8 @@
         
         [self.contentView addSubview:_roomName];
         
+        _roomName.textColor=[UIColor whiteColor];
+        
         [_roomName mas_makeConstraints:^(MASConstraintMaker *make) {
             
             make.size.mas_equalTo(CGSizeMake(self.contentView.bounds.size.width, 20));

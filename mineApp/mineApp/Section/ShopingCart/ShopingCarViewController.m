@@ -18,8 +18,27 @@
     
     [super viewDidLoad];
 
-    [self.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"tweetBtn_Nav"] style:UIBarButtonItemStylePlain target:self action:@selector(sendMsgBtnClicked:)] animated:NO];
+    //[self.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"tweetBtn_Nav"] style:UIBarButtonItemStylePlain target:self action:@selector(sendMsgBtnClicked:)] animated:NO];
     
+    
+    UIBarButtonItem *leftBarItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"hot_topic_Nav"] style:UIBarButtonItemStylePlain target:self action:@selector(hotTopicBtnClicked:)];
+    
+    [self.parentViewController.navigationItem setLeftBarButtonItem:leftBarItem animated:NO];
+    
+    
+   
+    UIBarButtonItem *rightBarItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"btn_setFrequent@2x"] style:UIBarButtonItemStylePlain target:self action:@selector(iconTopicBtnClicked:)];
+    
+    [self.parentViewController.navigationItem  setRightBarButtonItem:rightBarItem animated:NO];
+
+}
+
+-(void)hotTopicBtnClicked:(UIButton *)button{
+    
+    
+}
+
+-(void)iconTopicBtnClicked:(UIButton *)button{
     
 }
 

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1590A7269B3255DFE8295AF4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F166E95049C0FA9A8D24C07 /* libPods.a */; };
+		89790A4E1D3CBFD6008996E2 /* EasePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89790A4B1D3CBFD6008996E2 /* EasePageViewController.m */; };
+		89790A4F1D3CBFD6008996E2 /* RKSwipeBetweenViewControllers.m in Sources */ = {isa = PBXBuildFile; fileRef = 89790A4D1D3CBFD6008996E2 /* RKSwipeBetweenViewControllers.m */; };
+		89790A531D3CC02E008996E2 /* SMPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 89790A521D3CC02E008996E2 /* SMPageControl.m */; };
+		89790A561D3CC2AB008996E2 /* GouWuOneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89790A551D3CC2AB008996E2 /* GouWuOneController.m */; };
+		89790A591D3CC2C9008996E2 /* GouWuTwoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89790A581D3CC2C9008996E2 /* GouWuTwoController.m */; };
 		898BEEE51D37460800941321 /* NEO_AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 898BEEE41D37460800941321 /* NEO_AlertView.m */; };
 		898FF0C71D26327B00573B01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 898FF0C61D26327B00573B01 /* Assets.xcassets */; };
 		898FF0CA1D26327B00573B01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 898FF0C81D26327B00573B01 /* LaunchScreen.storyboard */; };
@@ -804,6 +809,16 @@
 /* Begin PBXFileReference section */
 		0BBD4FD08ADBD0985A01F39A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5F166E95049C0FA9A8D24C07 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		89790A4A1D3CBFD6008996E2 /* EasePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasePageViewController.h; sourceTree = "<group>"; };
+		89790A4B1D3CBFD6008996E2 /* EasePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasePageViewController.m; sourceTree = "<group>"; };
+		89790A4C1D3CBFD6008996E2 /* RKSwipeBetweenViewControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKSwipeBetweenViewControllers.h; sourceTree = "<group>"; };
+		89790A4D1D3CBFD6008996E2 /* RKSwipeBetweenViewControllers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKSwipeBetweenViewControllers.m; sourceTree = "<group>"; };
+		89790A511D3CC02E008996E2 /* SMPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPageControl.h; sourceTree = "<group>"; };
+		89790A521D3CC02E008996E2 /* SMPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPageControl.m; sourceTree = "<group>"; };
+		89790A541D3CC2AB008996E2 /* GouWuOneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GouWuOneController.h; sourceTree = "<group>"; };
+		89790A551D3CC2AB008996E2 /* GouWuOneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GouWuOneController.m; sourceTree = "<group>"; };
+		89790A571D3CC2C9008996E2 /* GouWuTwoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GouWuTwoController.h; sourceTree = "<group>"; };
+		89790A581D3CC2C9008996E2 /* GouWuTwoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GouWuTwoController.m; sourceTree = "<group>"; };
 		898BEEE31D37460800941321 /* NEO_AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEO_AlertView.h; sourceTree = "<group>"; };
 		898BEEE41D37460800941321 /* NEO_AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEO_AlertView.m; sourceTree = "<group>"; };
 		898FF0B71D26327B00573B01 /* mineApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mineApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1641,6 +1656,35 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		89790A481D3CBF8B008996E2 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				89790A501D3CC02E008996E2 /* SMPageControl */,
+				89790A491D3CBFD6008996E2 /* RKSwipeBetweenViewControllers */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		89790A491D3CBFD6008996E2 /* RKSwipeBetweenViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				89790A4A1D3CBFD6008996E2 /* EasePageViewController.h */,
+				89790A4B1D3CBFD6008996E2 /* EasePageViewController.m */,
+				89790A4C1D3CBFD6008996E2 /* RKSwipeBetweenViewControllers.h */,
+				89790A4D1D3CBFD6008996E2 /* RKSwipeBetweenViewControllers.m */,
+			);
+			path = RKSwipeBetweenViewControllers;
+			sourceTree = "<group>";
+		};
+		89790A501D3CC02E008996E2 /* SMPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				89790A511D3CC02E008996E2 /* SMPageControl.h */,
+				89790A521D3CC02E008996E2 /* SMPageControl.m */,
+			);
+			path = SMPageControl;
+			sourceTree = "<group>";
+		};
 		898BEEE21D3745C100941321 /* Categery */ = {
 			isa = PBXGroup;
 			children = (
@@ -1671,6 +1715,7 @@
 		898FF0B91D26327B00573B01 /* mineApp */ = {
 			isa = PBXGroup;
 			children = (
+				89790A481D3CBF8B008996E2 /* Vendor */,
 				898BEEE21D3745C100941321 /* Categery */,
 				89A460C71D30A4E800E3D39A /* Common */,
 				89E987721D2B4085001969FF /* StoryBoard */,
@@ -2671,6 +2716,10 @@
 			children = (
 				898FF57A1D29E96F00573B01 /* ShopingCarViewController.h */,
 				898FF57B1D29E96F00573B01 /* ShopingCarViewController.m */,
+				89790A541D3CC2AB008996E2 /* GouWuOneController.h */,
+				89790A551D3CC2AB008996E2 /* GouWuOneController.m */,
+				89790A571D3CC2C9008996E2 /* GouWuTwoController.h */,
+				89790A581D3CC2C9008996E2 /* GouWuTwoController.m */,
 			);
 			name = Messege;
 			path = ShopingCart;
@@ -3913,15 +3962,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89790A531D3CC02E008996E2 /* SMPageControl.m in Sources */,
 				89A460D11D30A55A00E3D39A /* ViewController.m in Sources */,
 				898FF57D1D29E96F00573B01 /* FinderViewController.m in Sources */,
 				898FF57C1D29E96F00573B01 /* ClassFounctiomController.m in Sources */,
 				898FF5831D29E96F00573B01 /* ShopingCarViewController.m in Sources */,
 				898FF5891D29E9BC00573B01 /* Muser.m in Sources */,
 				89A460CE1D30A55A00E3D39A /* AppDelegate.m in Sources */,
+				89790A561D3CC2AB008996E2 /* GouWuOneController.m in Sources */,
+				89790A4F1D3CBFD6008996E2 /* RKSwipeBetweenViewControllers.m in Sources */,
 				89AF12001D34C91E0046F04C /* userHeaderView.m in Sources */,
 				898FF5631D29E4DC00573B01 /* NEO_TabBarController.m in Sources */,
 				898FF57F1D29E96F00573B01 /* NextViewController.m in Sources */,
+				89790A4E1D3CBFD6008996E2 /* EasePageViewController.m in Sources */,
 				898FF57E1D29E96F00573B01 /* HomeViewController.m in Sources */,
 				898FF5811D29E96F00573B01 /* SignViewController.m in Sources */,
 				898FF5641D29E4DC00573B01 /* NEO_ViewController.m in Sources */,
@@ -3929,6 +3982,7 @@
 				898BEEE51D37460800941321 /* NEO_AlertView.m in Sources */,
 				89A460DB1D30E8AA00E3D39A /* VedioModel.m in Sources */,
 				898FF5621D29E4DC00573B01 /* NEO_NavigationController.m in Sources */,
+				89790A591D3CC2C9008996E2 /* GouWuTwoController.m in Sources */,
 				89A460D61D30D23700E3D39A /* VideoCell.m in Sources */,
 				898FF5801D29E96F00573B01 /* LoginViewController.m in Sources */,
 				898FF5821D29E96F00573B01 /* PersonalViewController.m in Sources */,

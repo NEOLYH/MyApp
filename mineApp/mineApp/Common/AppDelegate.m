@@ -20,8 +20,12 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
+    self.window.backgroundColor=[UIColor whiteColor];
+    
     self.tabBarController = [[NEO_TabBarController alloc] init];
+    
     self.window.rootViewController = self.tabBarController;
+    
     [self.window makeKeyAndVisible];
     
     return YES;

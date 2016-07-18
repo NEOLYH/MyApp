@@ -159,10 +159,10 @@
     //NSLog(@"%@",info);
     
     //获取源图像（未经裁剪）
-    //    UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
+       UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
     
     //获取裁剪后的图像
-    UIImage *image = info[UIImagePickerControllerEditedImage];
+    //UIImage *image = info[UIImagePickerControllerEditedImage];
     
     //将照片存到媒体库
     UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), NULL);
@@ -170,8 +170,22 @@
     self.userIconImage = image;
     
     //将照片存到沙盒
-    [self saveImage:image];
+   // [self saveImage:image];
     
+    //  转换为数据
+    NSData* data = UIImageJPEGRepresentation(image, 0.5);
+    //  存到文件和模型
+     NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
+
+    [defaults setValue:data forKey:@"image_data"];
+    
+    
+//    //将选择的图片显示出来
+//    [_headerView.userIconBtn setBackgroundImage:[UIImage imageWithData:data] forState:UIControlStateNormal];
+//    
+//    _headerView.userIconBtn.layer.cornerRadius=_headerView.userIconViewWith /2;
+//    
+
     
     
     [picker dismissViewControllerAnimated:YES completion:^{
@@ -203,10 +217,10 @@
     // 将图片写入文件
     [imageData writeToFile:filePath atomically:NO];
     //将选择的图片显示出来
-        [_headerView.userIconBtn setBackgroundImage:[UIImage imageWithContentsOfFile:filePath] forState:UIControlStateNormal];
-    
-    _headerView.userIconBtn.layer.cornerRadius=_headerView.userIconViewWith /2;
-    
+//        [_headerView.userIconBtn setBackgroundImage:[UIImage imageWithContentsOfFile:filePath] forState:UIControlStateNormal];
+//    
+//    _headerView.userIconBtn.layer.cornerRadius=_headerView.userIconViewWith /2;
+//    
     
 }
 
@@ -215,6 +229,7 @@
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
     
     [picker dismissViewControllerAnimated:YES completion:^{
+        
     }];
     
 }

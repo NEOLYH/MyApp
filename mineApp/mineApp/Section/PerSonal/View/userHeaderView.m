@@ -40,6 +40,7 @@
     
     headerView.contentMode = UIViewContentModeScaleAspectFill;
     
+    
          
     [headerView configUI];
     
@@ -132,6 +133,14 @@
                 
             }];
             
+            NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
+            
+            NSData * str= [defaults objectForKey:@"image_data"];
+            
+            if (str) {
+                
+                [_userIconBtn setBackgroundImage:[UIImage imageWithData:str] forState:UIControlStateNormal];
+            }
              
             _userIconBtn.layer.cornerRadius=_userIconViewWith / 2;
             

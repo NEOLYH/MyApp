@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1590A7269B3255DFE8295AF4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F166E95049C0FA9A8D24C07 /* libPods.a */; };
+		894495101D3DF9FC008AFA3A /* JDStatusBarNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 8944950B1D3DF9FC008AFA3A /* JDStatusBarNotification.m */; };
+		894495111D3DF9FC008AFA3A /* JDStatusBarStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8944950D1D3DF9FC008AFA3A /* JDStatusBarStyle.m */; };
+		894495121D3DF9FC008AFA3A /* JDStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8944950F1D3DF9FC008AFA3A /* JDStatusBarView.m */; };
 		89790A4E1D3CBFD6008996E2 /* EasePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89790A4B1D3CBFD6008996E2 /* EasePageViewController.m */; };
 		89790A4F1D3CBFD6008996E2 /* RKSwipeBetweenViewControllers.m in Sources */ = {isa = PBXBuildFile; fileRef = 89790A4D1D3CBFD6008996E2 /* RKSwipeBetweenViewControllers.m */; };
 		89790A531D3CC02E008996E2 /* SMPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 89790A521D3CC02E008996E2 /* SMPageControl.m */; };
@@ -809,6 +812,12 @@
 /* Begin PBXFileReference section */
 		0BBD4FD08ADBD0985A01F39A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5F166E95049C0FA9A8D24C07 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8944950A1D3DF9FC008AFA3A /* JDStatusBarNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarNotification.h; sourceTree = "<group>"; };
+		8944950B1D3DF9FC008AFA3A /* JDStatusBarNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarNotification.m; sourceTree = "<group>"; };
+		8944950C1D3DF9FC008AFA3A /* JDStatusBarStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarStyle.h; sourceTree = "<group>"; };
+		8944950D1D3DF9FC008AFA3A /* JDStatusBarStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarStyle.m; sourceTree = "<group>"; };
+		8944950E1D3DF9FC008AFA3A /* JDStatusBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarView.h; sourceTree = "<group>"; };
+		8944950F1D3DF9FC008AFA3A /* JDStatusBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarView.m; sourceTree = "<group>"; };
 		89790A4A1D3CBFD6008996E2 /* EasePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasePageViewController.h; sourceTree = "<group>"; };
 		89790A4B1D3CBFD6008996E2 /* EasePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasePageViewController.m; sourceTree = "<group>"; };
 		89790A4C1D3CBFD6008996E2 /* RKSwipeBetweenViewControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKSwipeBetweenViewControllers.h; sourceTree = "<group>"; };
@@ -1656,9 +1665,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		894495091D3DF9FC008AFA3A /* JDStatusBarNotification */ = {
+			isa = PBXGroup;
+			children = (
+				8944950A1D3DF9FC008AFA3A /* JDStatusBarNotification.h */,
+				8944950B1D3DF9FC008AFA3A /* JDStatusBarNotification.m */,
+				8944950C1D3DF9FC008AFA3A /* JDStatusBarStyle.h */,
+				8944950D1D3DF9FC008AFA3A /* JDStatusBarStyle.m */,
+				8944950E1D3DF9FC008AFA3A /* JDStatusBarView.h */,
+				8944950F1D3DF9FC008AFA3A /* JDStatusBarView.m */,
+			);
+			path = JDStatusBarNotification;
+			sourceTree = "<group>";
+		};
 		89790A481D3CBF8B008996E2 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				894495091D3DF9FC008AFA3A /* JDStatusBarNotification */,
 				89790A501D3CC02E008996E2 /* SMPageControl */,
 				89790A491D3CBFD6008996E2 /* RKSwipeBetweenViewControllers */,
 			);
@@ -3964,9 +3987,12 @@
 			files = (
 				89790A531D3CC02E008996E2 /* SMPageControl.m in Sources */,
 				89A460D11D30A55A00E3D39A /* ViewController.m in Sources */,
+				894495101D3DF9FC008AFA3A /* JDStatusBarNotification.m in Sources */,
 				898FF57D1D29E96F00573B01 /* FinderViewController.m in Sources */,
 				898FF57C1D29E96F00573B01 /* ClassFounctiomController.m in Sources */,
+				894495111D3DF9FC008AFA3A /* JDStatusBarStyle.m in Sources */,
 				898FF5831D29E96F00573B01 /* ShopingCarViewController.m in Sources */,
+				894495121D3DF9FC008AFA3A /* JDStatusBarView.m in Sources */,
 				898FF5891D29E9BC00573B01 /* Muser.m in Sources */,
 				89A460CE1D30A55A00E3D39A /* AppDelegate.m in Sources */,
 				89790A561D3CC2AB008996E2 /* GouWuOneController.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "PersonalViewController.h"
 #import "userHeaderView.h"
+#import "JDStatusBarNotification.h"
 
 
 @interface PersonalViewController ()<UITableViewDataSource,UITableViewDelegate,UIActionSheetDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
@@ -195,9 +196,27 @@
 #pragma mark - 照片存到本地后的回调
 - (void)image:(UIImage*)image didFinishSavingWithError:(NSError*)error contextInfo:(void*)contextInfo{
     if (!error) {
-        NSLog(@"存储成功");
+//        [JDStatusBarNotification showWithStatus:@"存储成功" dismissAfter:1];
         
         
+
+        [JDStatusBarNotification addStyleNamed:@"存储成功"
+                                       prepare:^JDStatusBarStyle*(JDStatusBarStyle *style) {
+                                           style.barColor = [UIColor colorWithRed:65/255.0 green:179/255.0 blue:94/255.0 alpha:1];
+                                           
+                                           style.textColor = [UIColor whiteColor];
+                                           style.font = [UIFont systemFontOfSize:12];
+                                           
+                                           style.textShadow =nil;
+                                           style.animationType = JDStatusBarAnimationTypeNone;
+                                           
+                                           style.progressBarColor = nil;
+                                           style.progressBarHeight = 20;
+                                           
+                                           return style;
+                                       }];
+        
+        [JDStatusBarNotification showWithStatus:@"存储成功" dismissAfter:2 styleName:@"存储成功"];
         
         
          

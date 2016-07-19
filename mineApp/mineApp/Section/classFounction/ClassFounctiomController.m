@@ -19,21 +19,31 @@
     // Do any additional setup after loading the view.
     
     self.title=@"广场";
-       
-    UIButton *button=[[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-    button.backgroundColor=[UIColor redColor];
     
-    [self.view addSubview:button];
     
-    [button addTarget:self action:@selector(changeVC) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *shareItem=[[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"tipIcon_Tweet@2x"] style:UIBarButtonItemStylePlain target:self action:@selector(shared:)];
+    
+    UIBarButtonItem *secondItem=[[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"tips_menu_icon_mkread@2x"] style:UIBarButtonItemStylePlain target:self action:@selector(didClock:)];
+    
+    NSArray *arr=[[NSArray alloc] initWithObjects:shareItem,secondItem, nil];
+    
+    
+    self.navigationItem.rightBarButtonItems=arr;
+    
+    
 }
 
--(void)changeVC{
-    
- 
 
-    //[self.navigationController pushViewController:vc animated:YES];
+-(void)shared:(UIButton *)button{
+    
+    
 }
+
+-(void)didClock:(UIButton *)button{
+    
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

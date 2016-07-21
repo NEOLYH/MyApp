@@ -7,6 +7,8 @@
 //
 
 #import "ClassFounctiomController.h"
+#import "UIBarButtonItem+ButtonItem.h"
+#import "JDStatusBarNotification.h"
 
 @interface ClassFounctiomController ()
 
@@ -23,12 +25,15 @@
     
     UIBarButtonItem *shareItem=[[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"tipIcon_Tweet@2x"] style:UIBarButtonItemStylePlain target:self action:@selector(shared:)];
     
-    UIBarButtonItem *secondItem=[[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"tips_menu_icon_mkread@2x"] style:UIBarButtonItemStylePlain target:self action:@selector(didClock:)];
+   UIBarButtonItem *secondItem=[[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"tips_menu_icon_mkread@2x"] style:UIBarButtonItemStylePlain target:self action:@selector(didClock:)];
     
-    NSArray *arr=[[NSArray alloc] initWithObjects:shareItem,secondItem, nil];
+    UIBarButtonItem *nextItem=[UIBarButtonItem barButtonItemWithTitle:@"NEO" imageName:@"tips_menu_icon_mkread" target:self selector:@selector(nextDidClick:)];
+    
+    NSArray *arr=[[NSArray alloc] initWithObjects:shareItem , secondItem,nextItem,nil];
     
     
     self.navigationItem.rightBarButtonItems=arr;
+    
     
     
 }
@@ -36,14 +41,19 @@
 
 -(void)shared:(UIButton *)button{
     
+    [JDStatusBarNotification showWithStatus:@"自定义" dismissAfter:2 styleName:@"存储成功"];
     
 }
 
 -(void)didClock:(UIButton *)button{
     
     
+    
 }
 
+-(void)nextDidClick:(UIButton *)button{
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

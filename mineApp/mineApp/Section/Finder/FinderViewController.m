@@ -75,7 +75,7 @@ static NSString *registerID = @"cell";
     
     FlowLayout.sectionInset = UIEdgeInsetsMake(0, 5, 0, 5);
     
-    _myCollectionVC=[[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, kScreenW, kScreenH-64) collectionViewLayout:FlowLayout];
+    _myCollectionVC=[[UICollectionView alloc] initWithFrame:CGRectMake(0, 64, kScreenW, kScreenH-64) collectionViewLayout:FlowLayout];
     
     [self.view addSubview:_myCollectionVC];
     
@@ -90,6 +90,7 @@ static NSString *registerID = @"cell";
     self.myCollectionVC.dataSource = self;
     
     [self.myCollectionVC registerClass:[VideoCell class] forCellWithReuseIdentifier:registerID];
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
 }
 

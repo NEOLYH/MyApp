@@ -137,6 +137,8 @@
             
             NSData * str= [defaults objectForKey:@"image_data"];
             
+            [defaults synchronize];
+            
             if (str) {
                 
                 [_userIconBtn setBackgroundImage:[UIImage imageWithData:str] forState:UIControlStateNormal];

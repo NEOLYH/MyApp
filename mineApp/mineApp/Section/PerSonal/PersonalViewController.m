@@ -62,8 +62,6 @@
     
     [self.view addSubview:_myTableView];
     
-        
-    
     }
 }
 
@@ -160,18 +158,13 @@
     //NSLog(@"%@",info);
     
     //获取源图像（未经裁剪）
-       UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
+       //UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
     
     //获取裁剪后的图像
-    //UIImage *image = info[UIImagePickerControllerEditedImage];
+    UIImage *image = info[UIImagePickerControllerEditedImage];
     
     //将照片存到媒体库
-    UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), NULL);
-    
-    self.userIconImage = image;
-    
-    //将照片存到沙盒
-   // [self saveImage:image];
+    //UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), NULL);
     
     //  转换为数据
     NSData* data = UIImageJPEGRepresentation(image, 0.5);
@@ -179,69 +172,49 @@
      NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
 
     [defaults setValue:data forKey:@"image_data"];
-    
-    
-//    //将选择的图片显示出来
-//    [_headerView.userIconBtn setBackgroundImage:[UIImage imageWithData:data] forState:UIControlStateNormal];
-//    
-//    _headerView.userIconBtn.layer.cornerRadius=_headerView.userIconViewWith /2;
-//    
-
-    
+    [defaults synchronize];
     
     [picker dismissViewControllerAnimated:YES completion:^{
     }];
 }
 
-#pragma mark - 照片存到本地后的回调
-- (void)image:(UIImage*)image didFinishSavingWithError:(NSError*)error contextInfo:(void*)contextInfo{
-    if (!error) {
-//        [JDStatusBarNotification showWithStatus:@"存储成功" dismissAfter:1];
-        
-        
-
-        [JDStatusBarNotification addStyleNamed:@"存储成功"
-                                       prepare:^JDStatusBarStyle*(JDStatusBarStyle *style) {
-                                           style.barColor = [UIColor colorWithRed:65/255.0 green:179/255.0 blue:94/255.0 alpha:1];
-                                           
-                                           style.textColor = [UIColor whiteColor];
-                                           style.font = [UIFont systemFontOfSize:12];
-                                           
-                                           style.textShadow =nil;
-                                           style.animationType = JDStatusBarAnimationTypeNone;
-                                           
-                                           style.progressBarColor = nil;
-                                           style.progressBarHeight = 20;
-                                           
-                                           return style;
-                                       }];
-        
-        [JDStatusBarNotification showWithStatus:@"存储成功" dismissAfter:2 styleName:@"存储成功"];
-        
-        
-         
-    } else {
-        NSLog(@"存储失败：%@", error);
-    }
-}
+//#pragma mark - 照片存到本地后的回调
+//- (void)image:(UIImage*)image didFinishSavingWithError:(NSError*)error contextInfo:(void*)contextInfo{
+//    if (!error) {
+//        
+//    [JDStatusBarNotification addStyleNamed:@"存储成功" prepare:^JDStatusBarStyle*(JDStatusBarStyle *style) {
+//        style.barColor = [UIColor colorWithRed:65/255.0 green:179/255.0 blue:94/255.0 alpha:1];
+//        style.textColor = [UIColor whiteColor];
+//        style.font = [UIFont systemFontOfSize:12];
+//        style.textShadow =nil;
+//        style.animationType = JDStatusBarAnimationTypeNone;
+//        style.progressBarColor = nil;
+//        style.progressBarHeight = 20;
+//                                           
+//        return style;
+//        
+//    }];
+//        
+//        [JDStatusBarNotification showWithStatus:@"存储成功" dismissAfter:2 styleName:@"存储成功"];
+//         
+//    } else {
+//        NSLog(@"存储失败：%@", error);
+//    }
+//}
 
 
-- (void) saveImage:(UIImage *)currentImage {
-    //设置照片的品质
-    NSData *imageData = UIImageJPEGRepresentation(currentImage, 0.5);
-    
-    NSLog(@"%@",NSHomeDirectory());
-    // 获取沙盒目录
-    NSString *filePath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/currentImage.png"];
-    // 将图片写入文件
-    [imageData writeToFile:filePath atomically:NO];
-    //将选择的图片显示出来
-//        [_headerView.userIconBtn setBackgroundImage:[UIImage imageWithContentsOfFile:filePath] forState:UIControlStateNormal];
+//- (void) saveImage:(UIImage *)currentImage {
+//    //设置照片的品质
+//    NSData *imageData = UIImageJPEGRepresentation(currentImage, 0.5);
 //    
-//    _headerView.userIconBtn.layer.cornerRadius=_headerView.userIconViewWith /2;
-//    
-    
-}
+//    NSLog(@"%@",NSHomeDirectory());
+//    // 获取沙盒目录
+//    NSString *filePath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/currentImage.png"];
+//    // 将图片写入文件
+//    [imageData writeToFile:filePath atomically:NO];
+//    //将选择的图片显示出来
+//
+//}
 
 #pragma mark 取消操作时的回调
 

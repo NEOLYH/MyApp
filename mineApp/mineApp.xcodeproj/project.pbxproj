@@ -11,6 +11,7 @@
 		894495101D3DF9FC008AFA3A /* JDStatusBarNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 8944950B1D3DF9FC008AFA3A /* JDStatusBarNotification.m */; };
 		894495111D3DF9FC008AFA3A /* JDStatusBarStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8944950D1D3DF9FC008AFA3A /* JDStatusBarStyle.m */; };
 		894495121D3DF9FC008AFA3A /* JDStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8944950F1D3DF9FC008AFA3A /* JDStatusBarView.m */; };
+		8944951A1D3E319D008AFA3A /* UIBarButtonItem+ButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 894495191D3E319D008AFA3A /* UIBarButtonItem+ButtonItem.m */; };
 		89790A4E1D3CBFD6008996E2 /* EasePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89790A4B1D3CBFD6008996E2 /* EasePageViewController.m */; };
 		89790A4F1D3CBFD6008996E2 /* RKSwipeBetweenViewControllers.m in Sources */ = {isa = PBXBuildFile; fileRef = 89790A4D1D3CBFD6008996E2 /* RKSwipeBetweenViewControllers.m */; };
 		89790A531D3CC02E008996E2 /* SMPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 89790A521D3CC02E008996E2 /* SMPageControl.m */; };
@@ -805,6 +806,11 @@
 		89A460D11D30A55A00E3D39A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A460CD1D30A55A00E3D39A /* ViewController.m */; };
 		89A460D61D30D23700E3D39A /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A460D51D30D23700E3D39A /* VideoCell.m */; };
 		89A460DB1D30E8AA00E3D39A /* VedioModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A460DA1D30E8AA00E3D39A /* VedioModel.m */; };
+		89ADC3B31D40948300DF75FF /* GlowImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADC3AC1D40948300DF75FF /* GlowImageView.m */; };
+		89ADC3B41D40948300DF75FF /* MenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADC3AE1D40948300DF75FF /* MenuButton.m */; };
+		89ADC3B51D40948300DF75FF /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADC3B01D40948300DF75FF /* MenuItem.m */; };
+		89ADC3B61D40948300DF75FF /* PopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADC3B21D40948300DF75FF /* PopMenu.m */; };
+		89ADC3BA1D4097C400DF75FF /* XHRealTimeBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADC3B91D4097C400DF75FF /* XHRealTimeBlur.m */; };
 		89AF12001D34C91E0046F04C /* userHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AF11FF1D34C91E0046F04C /* userHeaderView.m */; };
 		89E987741D2B40BB001969FF /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E987731D2B40BB001969FF /* Login.storyboard */; };
 /* End PBXBuildFile section */
@@ -818,6 +824,8 @@
 		8944950D1D3DF9FC008AFA3A /* JDStatusBarStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarStyle.m; sourceTree = "<group>"; };
 		8944950E1D3DF9FC008AFA3A /* JDStatusBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarView.h; sourceTree = "<group>"; };
 		8944950F1D3DF9FC008AFA3A /* JDStatusBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarView.m; sourceTree = "<group>"; };
+		894495181D3E319D008AFA3A /* UIBarButtonItem+ButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+ButtonItem.h"; sourceTree = "<group>"; };
+		894495191D3E319D008AFA3A /* UIBarButtonItem+ButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ButtonItem.m"; sourceTree = "<group>"; };
 		89790A4A1D3CBFD6008996E2 /* EasePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasePageViewController.h; sourceTree = "<group>"; };
 		89790A4B1D3CBFD6008996E2 /* EasePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasePageViewController.m; sourceTree = "<group>"; };
 		89790A4C1D3CBFD6008996E2 /* RKSwipeBetweenViewControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKSwipeBetweenViewControllers.h; sourceTree = "<group>"; };
@@ -1637,6 +1645,16 @@
 		89A460D51D30D23700E3D39A /* VideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
 		89A460D91D30E8AA00E3D39A /* VedioModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VedioModel.h; sourceTree = "<group>"; };
 		89A460DA1D30E8AA00E3D39A /* VedioModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VedioModel.m; sourceTree = "<group>"; };
+		89ADC3AB1D40948300DF75FF /* GlowImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlowImageView.h; sourceTree = "<group>"; };
+		89ADC3AC1D40948300DF75FF /* GlowImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlowImageView.m; sourceTree = "<group>"; };
+		89ADC3AD1D40948300DF75FF /* MenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuButton.h; sourceTree = "<group>"; };
+		89ADC3AE1D40948300DF75FF /* MenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuButton.m; sourceTree = "<group>"; };
+		89ADC3AF1D40948300DF75FF /* MenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItem.h; sourceTree = "<group>"; };
+		89ADC3B01D40948300DF75FF /* MenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuItem.m; sourceTree = "<group>"; };
+		89ADC3B11D40948300DF75FF /* PopMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenu.h; sourceTree = "<group>"; };
+		89ADC3B21D40948300DF75FF /* PopMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenu.m; sourceTree = "<group>"; };
+		89ADC3B81D4097C400DF75FF /* XHRealTimeBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHRealTimeBlur.h; sourceTree = "<group>"; };
+		89ADC3B91D4097C400DF75FF /* XHRealTimeBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHRealTimeBlur.m; sourceTree = "<group>"; };
 		89AF11FB1D349C8F0046F04C /* Contant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contant.h; sourceTree = "<group>"; };
 		89AF11FE1D34C91E0046F04C /* userHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = userHeaderView.h; sourceTree = "<group>"; };
 		89AF11FF1D34C91E0046F04C /* userHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = userHeaderView.m; sourceTree = "<group>"; };
@@ -1681,6 +1699,8 @@
 		89790A481D3CBF8B008996E2 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				89ADC3B71D4097C400DF75FF /* XHRealTimeBlur */,
+				89ADC3AA1D40948300DF75FF /* PopMenu */,
 				894495091D3DF9FC008AFA3A /* JDStatusBarNotification */,
 				89790A501D3CC02E008996E2 /* SMPageControl */,
 				89790A491D3CBFD6008996E2 /* RKSwipeBetweenViewControllers */,
@@ -1713,6 +1733,8 @@
 			children = (
 				898BEEE31D37460800941321 /* NEO_AlertView.h */,
 				898BEEE41D37460800941321 /* NEO_AlertView.m */,
+				894495181D3E319D008AFA3A /* UIBarButtonItem+ButtonItem.h */,
+				894495191D3E319D008AFA3A /* UIBarButtonItem+ButtonItem.m */,
 			);
 			path = Categery;
 			sourceTree = "<group>";
@@ -3063,6 +3085,30 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		89ADC3AA1D40948300DF75FF /* PopMenu */ = {
+			isa = PBXGroup;
+			children = (
+				89ADC3AB1D40948300DF75FF /* GlowImageView.h */,
+				89ADC3AC1D40948300DF75FF /* GlowImageView.m */,
+				89ADC3AD1D40948300DF75FF /* MenuButton.h */,
+				89ADC3AE1D40948300DF75FF /* MenuButton.m */,
+				89ADC3AF1D40948300DF75FF /* MenuItem.h */,
+				89ADC3B01D40948300DF75FF /* MenuItem.m */,
+				89ADC3B11D40948300DF75FF /* PopMenu.h */,
+				89ADC3B21D40948300DF75FF /* PopMenu.m */,
+			);
+			path = PopMenu;
+			sourceTree = "<group>";
+		};
+		89ADC3B71D4097C400DF75FF /* XHRealTimeBlur */ = {
+			isa = PBXGroup;
+			children = (
+				89ADC3B81D4097C400DF75FF /* XHRealTimeBlur.h */,
+				89ADC3B91D4097C400DF75FF /* XHRealTimeBlur.m */,
+			);
+			path = XHRealTimeBlur;
+			sourceTree = "<group>";
+		};
 		89AF11FC1D34C8BF0046F04C /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -3988,10 +4034,14 @@
 				89790A531D3CC02E008996E2 /* SMPageControl.m in Sources */,
 				89A460D11D30A55A00E3D39A /* ViewController.m in Sources */,
 				894495101D3DF9FC008AFA3A /* JDStatusBarNotification.m in Sources */,
+				8944951A1D3E319D008AFA3A /* UIBarButtonItem+ButtonItem.m in Sources */,
+				89ADC3B51D40948300DF75FF /* MenuItem.m in Sources */,
 				898FF57D1D29E96F00573B01 /* FinderViewController.m in Sources */,
 				898FF57C1D29E96F00573B01 /* ClassFounctiomController.m in Sources */,
 				894495111D3DF9FC008AFA3A /* JDStatusBarStyle.m in Sources */,
+				89ADC3B61D40948300DF75FF /* PopMenu.m in Sources */,
 				898FF5831D29E96F00573B01 /* ShopingCarViewController.m in Sources */,
+				89ADC3B41D40948300DF75FF /* MenuButton.m in Sources */,
 				894495121D3DF9FC008AFA3A /* JDStatusBarView.m in Sources */,
 				898FF5891D29E9BC00573B01 /* Muser.m in Sources */,
 				89A460CE1D30A55A00E3D39A /* AppDelegate.m in Sources */,
@@ -3999,12 +4049,14 @@
 				89790A4F1D3CBFD6008996E2 /* RKSwipeBetweenViewControllers.m in Sources */,
 				89AF12001D34C91E0046F04C /* userHeaderView.m in Sources */,
 				898FF5631D29E4DC00573B01 /* NEO_TabBarController.m in Sources */,
+				89ADC3B31D40948300DF75FF /* GlowImageView.m in Sources */,
 				898FF57F1D29E96F00573B01 /* NextViewController.m in Sources */,
 				89790A4E1D3CBFD6008996E2 /* EasePageViewController.m in Sources */,
 				898FF57E1D29E96F00573B01 /* HomeViewController.m in Sources */,
 				898FF5811D29E96F00573B01 /* SignViewController.m in Sources */,
 				898FF5641D29E4DC00573B01 /* NEO_ViewController.m in Sources */,
 				89A460CF1D30A55A00E3D39A /* main.m in Sources */,
+				89ADC3BA1D4097C400DF75FF /* XHRealTimeBlur.m in Sources */,
 				898BEEE51D37460800941321 /* NEO_AlertView.m in Sources */,
 				89A460DB1D30E8AA00E3D39A /* VedioModel.m in Sources */,
 				898FF5621D29E4DC00573B01 /* NEO_NavigationController.m in Sources */,

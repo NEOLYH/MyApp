@@ -1,4 +1,15 @@
 # MyApp
-自己尝试的demo
+A project that has many demos
 
-#代码参照coding
+#app基础框架
+公共导航栏，包含各种样式。
+
+#视频类  直播
+仿战旗
+
+#顶部弹出提示
+
+
+#popmenu
+
+

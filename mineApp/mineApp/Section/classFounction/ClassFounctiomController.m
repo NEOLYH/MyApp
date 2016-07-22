@@ -9,6 +9,7 @@
 #import "ClassFounctiomController.h"
 #import "UIBarButtonItem+ButtonItem.h"
 #import "JDStatusBarNotification.h"
+#import "POPTableViewController.h"
 
 @interface ClassFounctiomController ()
 
@@ -52,6 +53,11 @@
 }
 
 -(void)nextDidClick:(UIButton *)button{
+    
+    POPTableViewController *popVC=[[POPTableViewController alloc] init];
+    
+    [self.navigationController pushViewController:popVC animated:YES];
+    
     
 }
 

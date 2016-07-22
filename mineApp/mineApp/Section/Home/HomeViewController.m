@@ -23,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
     self.title=@"主页";
     
     UIButton * button =[[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];

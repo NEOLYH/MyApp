@@ -811,6 +811,8 @@
 		89ADC3B51D40948300DF75FF /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADC3B01D40948300DF75FF /* MenuItem.m */; };
 		89ADC3B61D40948300DF75FF /* PopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADC3B21D40948300DF75FF /* PopMenu.m */; };
 		89ADC3BA1D4097C400DF75FF /* XHRealTimeBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADC3B91D4097C400DF75FF /* XHRealTimeBlur.m */; };
+		89ADC85A1D42070B00DF75FF /* POPTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADC8591D42070B00DF75FF /* POPTableViewController.m */; };
+		89ADC85E1D42078A00DF75FF /* NEO_ShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADC85D1D42078A00DF75FF /* NEO_ShareView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -Wno-shorten-64-to-32"; }; };
 		89AF12001D34C91E0046F04C /* userHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AF11FF1D34C91E0046F04C /* userHeaderView.m */; };
 		89E987741D2B40BB001969FF /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E987731D2B40BB001969FF /* Login.storyboard */; };
 /* End PBXBuildFile section */
@@ -1655,6 +1657,10 @@
 		89ADC3B21D40948300DF75FF /* PopMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenu.m; sourceTree = "<group>"; };
 		89ADC3B81D4097C400DF75FF /* XHRealTimeBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHRealTimeBlur.h; sourceTree = "<group>"; };
 		89ADC3B91D4097C400DF75FF /* XHRealTimeBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHRealTimeBlur.m; sourceTree = "<group>"; };
+		89ADC8581D42070B00DF75FF /* POPTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPTableViewController.h; sourceTree = "<group>"; };
+		89ADC8591D42070B00DF75FF /* POPTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POPTableViewController.m; sourceTree = "<group>"; };
+		89ADC85C1D42078A00DF75FF /* NEO_ShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEO_ShareView.h; sourceTree = "<group>"; };
+		89ADC85D1D42078A00DF75FF /* NEO_ShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEO_ShareView.m; sourceTree = "<group>"; };
 		89AF11FB1D349C8F0046F04C /* Contant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contant.h; sourceTree = "<group>"; };
 		89AF11FE1D34C91E0046F04C /* userHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = userHeaderView.h; sourceTree = "<group>"; };
 		89AF11FF1D34C91E0046F04C /* userHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = userHeaderView.m; sourceTree = "<group>"; };
@@ -2706,8 +2712,11 @@
 		898FF5661D29E96F00573B01 /* classFounction */ = {
 			isa = PBXGroup;
 			children = (
+				89ADC85B1D42074500DF75FF /* View */,
 				898FF5671D29E96F00573B01 /* ClassFounctiomController.h */,
 				898FF5681D29E96F00573B01 /* ClassFounctiomController.m */,
+				89ADC8581D42070B00DF75FF /* POPTableViewController.h */,
+				89ADC8591D42070B00DF75FF /* POPTableViewController.m */,
 			);
 			path = classFounction;
 			sourceTree = "<group>";
@@ -3107,6 +3116,15 @@
 				89ADC3B91D4097C400DF75FF /* XHRealTimeBlur.m */,
 			);
 			path = XHRealTimeBlur;
+			sourceTree = "<group>";
+		};
+		89ADC85B1D42074500DF75FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89ADC85C1D42078A00DF75FF /* NEO_ShareView.h */,
+				89ADC85D1D42078A00DF75FF /* NEO_ShareView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		89AF11FC1D34C8BF0046F04C /* View */ = {
@@ -4046,6 +4064,7 @@
 				898FF5891D29E9BC00573B01 /* Muser.m in Sources */,
 				89A460CE1D30A55A00E3D39A /* AppDelegate.m in Sources */,
 				89790A561D3CC2AB008996E2 /* GouWuOneController.m in Sources */,
+				89ADC85A1D42070B00DF75FF /* POPTableViewController.m in Sources */,
 				89790A4F1D3CBFD6008996E2 /* RKSwipeBetweenViewControllers.m in Sources */,
 				89AF12001D34C91E0046F04C /* userHeaderView.m in Sources */,
 				898FF5631D29E4DC00573B01 /* NEO_TabBarController.m in Sources */,
@@ -4064,6 +4083,7 @@
 				89A460D61D30D23700E3D39A /* VideoCell.m in Sources */,
 				898FF5801D29E96F00573B01 /* LoginViewController.m in Sources */,
 				898FF5821D29E96F00573B01 /* PersonalViewController.m in Sources */,
+				89ADC85E1D42078A00DF75FF /* NEO_ShareView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

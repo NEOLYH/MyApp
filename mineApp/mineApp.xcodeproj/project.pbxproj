@@ -12,6 +12,7 @@
 		894495111D3DF9FC008AFA3A /* JDStatusBarStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8944950D1D3DF9FC008AFA3A /* JDStatusBarStyle.m */; };
 		894495121D3DF9FC008AFA3A /* JDStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8944950F1D3DF9FC008AFA3A /* JDStatusBarView.m */; };
 		8944951A1D3E319D008AFA3A /* UIBarButtonItem+ButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 894495191D3E319D008AFA3A /* UIBarButtonItem+ButtonItem.m */; };
+		8976236D1D4B3D580004E44B /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 8976236C1D4B3D580004E44B /* UIView+Common.m */; };
 		89790A4E1D3CBFD6008996E2 /* EasePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89790A4B1D3CBFD6008996E2 /* EasePageViewController.m */; };
 		89790A4F1D3CBFD6008996E2 /* RKSwipeBetweenViewControllers.m in Sources */ = {isa = PBXBuildFile; fileRef = 89790A4D1D3CBFD6008996E2 /* RKSwipeBetweenViewControllers.m */; };
 		89790A531D3CC02E008996E2 /* SMPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 89790A521D3CC02E008996E2 /* SMPageControl.m */; };
@@ -828,6 +829,8 @@
 		8944950F1D3DF9FC008AFA3A /* JDStatusBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDStatusBarView.m; sourceTree = "<group>"; };
 		894495181D3E319D008AFA3A /* UIBarButtonItem+ButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+ButtonItem.h"; sourceTree = "<group>"; };
 		894495191D3E319D008AFA3A /* UIBarButtonItem+ButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ButtonItem.m"; sourceTree = "<group>"; };
+		8976236B1D4B3D580004E44B /* UIView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Common.h"; sourceTree = "<group>"; };
+		8976236C1D4B3D580004E44B /* UIView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Common.m"; sourceTree = "<group>"; };
 		89790A4A1D3CBFD6008996E2 /* EasePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasePageViewController.h; sourceTree = "<group>"; };
 		89790A4B1D3CBFD6008996E2 /* EasePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasePageViewController.m; sourceTree = "<group>"; };
 		89790A4C1D3CBFD6008996E2 /* RKSwipeBetweenViewControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKSwipeBetweenViewControllers.h; sourceTree = "<group>"; };
@@ -1741,6 +1744,8 @@
 				898BEEE41D37460800941321 /* NEO_AlertView.m */,
 				894495181D3E319D008AFA3A /* UIBarButtonItem+ButtonItem.h */,
 				894495191D3E319D008AFA3A /* UIBarButtonItem+ButtonItem.m */,
+				8976236B1D4B3D580004E44B /* UIView+Common.h */,
+				8976236C1D4B3D580004E44B /* UIView+Common.m */,
 			);
 			path = Categery;
 			sourceTree = "<group>";
@@ -4068,6 +4073,7 @@
 				89790A4F1D3CBFD6008996E2 /* RKSwipeBetweenViewControllers.m in Sources */,
 				89AF12001D34C91E0046F04C /* userHeaderView.m in Sources */,
 				898FF5631D29E4DC00573B01 /* NEO_TabBarController.m in Sources */,
+				8976236D1D4B3D580004E44B /* UIView+Common.m in Sources */,
 				89ADC3B31D40948300DF75FF /* GlowImageView.m in Sources */,
 				898FF57F1D29E96F00573B01 /* NextViewController.m in Sources */,
 				89790A4E1D3CBFD6008996E2 /* EasePageViewController.m in Sources */,

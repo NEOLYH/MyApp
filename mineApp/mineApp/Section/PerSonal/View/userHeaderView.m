@@ -123,7 +123,7 @@
             
             [self addSubview:_userIconBtn];
             
-            
+            _userIconBtn.clipsToBounds=YES;
 
             [_userIconBtn mas_makeConstraints:^(MASConstraintMaker *make) {
                

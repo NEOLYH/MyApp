@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "NextViewController.h"
 #import "PopMenu.h"
+#import "UIView+Common.h"
 
 @interface HomeViewController ()
 
@@ -20,19 +21,30 @@
 
 @implementation HomeViewController
 
+
+-(void)viewWillAppear:(BOOL)animated{
+    
+    [super viewWillAppear:animated];
+    
+    [self.view beginLoading];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     
     self.title=@"主页";
+//    
+//    UIButton * button =[[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+//    [self.view addSubview:button];
+//    
+//    button.backgroundColor=[UIColor orangeColor];
+//    
+//    [button addTarget:self action:@selector(didClick) forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton * button =[[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-    [self.view addSubview:button];
-    
-    button.backgroundColor=[UIColor orangeColor];
-    
-    [button addTarget:self action:@selector(didClick) forControlEvents:UIControlEventTouchUpInside];
-    
+    UITableView *tableView=[[UITableView alloc ] initWithFrame:self.view.frame style:UITableViewStylePlain];
+    tableView.backgroundColor=[UIColor orangeColor];
+    [self.view addSubview:tableView];
+//    
     [self setupNavBtn];
     
     
@@ -52,6 +64,7 @@
 
 -(void)settingBtnClicked:(UIButton *)button{
     
+    [self.view endLoading];
         
         NSArray *menuItems=@[
                              [MenuItem itemWithTitle:@"项目" iconName:@"pop_Project" index:0],
@@ -117,17 +130,22 @@
 
 -(void)addUserBtnClicked:(UIButton *)button{
     
+    [self.view beginLoading];
+    
+    
+    
 }
 
 #pragma mark 跳转
 
--(void)didClick{
-    
-    NextViewController * vc=[[NextViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-    
-    
-}
+//-(void)didClick{
+//    
+//    
+//    NextViewController * vc=[[NextViewController alloc] init];
+//    [self.navigationController pushViewController:vc animated:YES];
+//    
+//    
+//}
 
 -(void)goToProjectVC{
     

@@ -9,6 +9,7 @@
 #import "PersonalViewController.h"
 #import "userHeaderView.h"
 #import "JDStatusBarNotification.h"
+#import "UIView+Common.h"
 
 
 @interface PersonalViewController ()<UITableViewDataSource,UITableViewDelegate,UIActionSheetDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
@@ -259,12 +260,13 @@
 
 -(void)settingBtnClicked:(UIButton *)button{
     
-    
+
+    NSLog(@"dsafsdf");
 }
 
 -(void)addUserBtnClicked:(UIButton *)button{
     
-    
+         
     
     
 }

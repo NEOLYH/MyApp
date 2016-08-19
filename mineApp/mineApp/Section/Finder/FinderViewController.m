@@ -11,6 +11,7 @@
 #import "AFHTTPSessionManager.h"
 #import "VedioModel.h"
 #import "MJExtension.h"
+#import "UIView+Common.h"
 
 
 #define kItemW ((kScreenW - 20)/2)
@@ -101,13 +102,19 @@ static NSString *registerID = @"cell";
     
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     
+    [self.view beginLoading];
+    
     [manager GET:[NSString stringWithFormat:@"%@%@%@",HomeUrlH,@1,HomeUrlF] parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         NSLog(@"111%@",responseObject);
         
         _data = [[responseObject objectForKey:@"data"] objectForKey:@"rooms"];
         
+        [self.view endLoading];
+        
         [_myCollectionVC reloadData];
+        
+        
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"\n%@",error);

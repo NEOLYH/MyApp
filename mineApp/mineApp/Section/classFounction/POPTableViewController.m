@@ -5,8 +5,16 @@
 //  Created by mac1 on 16/7/22.
 //  Copyright © 2016年 陆玉洪. All rights reserved.
 //
+#define kCCellIdentifier_Time @"TimeCell"
 
 #import "POPTableViewController.h"
+#import "TimeLineCell.h"
+
+@interface POPTableViewController()<UITableViewDataSource,UITableViewDelegate>
+
+@property(nonatomic, strong) UITableView * tableView;
+
+@end
 
 @implementation POPTableViewController
 
@@ -18,9 +26,25 @@
     
     self.navigationItem.rightBarButtonItem=secondItem;
     
+    [self  configerUI];
+    
 }
 
-
+-(void)configerUI{
+    
+    _tableView =[[UITableView alloc] initWithFrame:CGRectMake(0, 164,self.view.bounds.size.width, self.view.bounds.size.height) style:UITableViewStylePlain];
+    
+    [self.view addSubview:_tableView];
+    
+    [_tableView registerClass:[TimeLineCell class] forCellReuseIdentifier:kCCellIdentifier_Time];
+    
+    
+    _tableView.delegate=self;
+    _tableView.dataSource=self;
+    
+   // _tableView.backgroundColor=[UIColor orangeColor];
+    
+}
 
 -(void)didClock:(UIButton *)button{
     
@@ -97,5 +121,48 @@
     return 60.f;
 }
 
+
+#pragma mark tableView dataSource delegate 
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return 1;
+    
+}
+
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    
+    TimeLineCell *  cell=[tableView  dequeueReusableCellWithIdentifier:kCCellIdentifier_Time forIndexPath:indexPath];
+    
+    return cell;
+    
+}
+
+
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    
+    
+    return 1;
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return [TimeLineCell cellHeight];
+    
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    
+    return 0;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    
+    return 0;
+}
 
 @end

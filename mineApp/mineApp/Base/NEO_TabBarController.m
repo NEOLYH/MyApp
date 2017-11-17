@@ -99,19 +99,26 @@
         [navigationController setDelegate:self];
     }
     
-    NSArray *dataArray = @[@"主页", @"动态", @"冒泡", @"进货车", @"我"];
+     NSArray *dataArray = @[@"主页", @"动态", @"冒泡", @"进货车", @"我"];
     
      NSArray *nImageArray = @[@"project_normal", @"task_normal", @"tweet_normal", @"privatemessage_normal", @"me_normal"];
     
-    NSArray *sImgaearray = @[@"project_selected", @"task_selected", @"tweet_selected", @"privatemessage_selected", @"me_selected"];
+     NSArray *sImgaearray = @[@"project_selected", @"task_selected", @"tweet_selected", @"privatemessage_selected", @"me_selected"];
     
-    for (int i = 0; i < [self.viewControllers count]; i++) {
-        
-        [self setupTabBarItem:self.viewControllers[i]
-                    withTitle:dataArray[i]
-                  normalImage:nImageArray[i]
-                selectedImage:sImgaearray[i]];
-    }
+//    for (int i = 0; i < [self.viewControllers count]; i++) {
+//
+//        [self setupTabBarItem:self.viewControllers[i]
+//                    withTitle:dataArray[i]
+//                  normalImage:nImageArray[i]
+//                selectedImage:sImgaearray[i]];
+//    }
+    
+    [self.viewControllers enumerateObjectsUsingBlock:^(__kindof UIViewController * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [self setupTabBarItem:self.viewControllers[idx]
+                    withTitle:dataArray[idx]
+                  normalImage:nImageArray[idx]
+                selectedImage:sImgaearray[idx]];
+    }];
 }
 
 

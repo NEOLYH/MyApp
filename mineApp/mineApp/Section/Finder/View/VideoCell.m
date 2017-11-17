@@ -79,7 +79,8 @@
     
     _model=model;
     
-    [_img sd_setImageWithURL:[NSURL URLWithString:_model.bpic]];
+//    [_img sd_setImageWithURL:[NSURL URLWithString:_model.bpic]];
+    [_img sd_setHighlightedImageWithURL:[NSURL URLWithString:_model.bpic] options:SDWebImageHighPriority];
     
     _roomTitle.text = _model.title;
     

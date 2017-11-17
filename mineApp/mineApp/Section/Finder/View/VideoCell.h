@@ -20,11 +20,10 @@
 //房间名
 @property(nonatomic, strong) UILabel * roomTitle;
 
-//主播名称
-@property(nonatomic, strong) UILabel * roomName;
+////主播名称
+//@property(nonatomic, strong) UILabel * roomName;
 
 //在线人数
 @property(nonatomic, strong) UILabel * peopleNum;
-
 
 @end

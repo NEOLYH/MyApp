@@ -13,8 +13,7 @@
 @end
 
 @implementation ShopingCarViewController
-
-- (void)viewDidLoad {
+ - (void)viewDidLoad {
     
     [super viewDidLoad];
     [self navigationItemAndAction];

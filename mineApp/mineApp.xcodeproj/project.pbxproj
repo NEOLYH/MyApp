@@ -28,6 +28,8 @@
 		89790A531D3CC02E008996E2 /* SMPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 89790A521D3CC02E008996E2 /* SMPageControl.m */; };
 		89790A561D3CC2AB008996E2 /* GouWuOneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89790A551D3CC2AB008996E2 /* GouWuOneController.m */; };
 		89790A591D3CC2C9008996E2 /* GouWuTwoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89790A581D3CC2C9008996E2 /* GouWuTwoController.m */; };
+		8988B6301FCFA45500FC3719 /* SessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8988B62F1FCFA45500FC3719 /* SessionManager.m */; };
+		8988B6331FCFB0D900FC3719 /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8988B6321FCFB0D900FC3719 /* HTTPClient.m */; };
 		898BEEE51D37460800941321 /* NEO_AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 898BEEE41D37460800941321 /* NEO_AlertView.m */; };
 		898FF0C71D26327B00573B01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 898FF0C61D26327B00573B01 /* Assets.xcassets */; };
 		898FF0CA1D26327B00573B01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 898FF0C81D26327B00573B01 /* LaunchScreen.storyboard */; };
@@ -871,6 +873,10 @@
 		89790A551D3CC2AB008996E2 /* GouWuOneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GouWuOneController.m; sourceTree = "<group>"; };
 		89790A571D3CC2C9008996E2 /* GouWuTwoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GouWuTwoController.h; sourceTree = "<group>"; };
 		89790A581D3CC2C9008996E2 /* GouWuTwoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GouWuTwoController.m; sourceTree = "<group>"; };
+		8988B62E1FCFA45500FC3719 /* SessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SessionManager.h; sourceTree = "<group>"; };
+		8988B62F1FCFA45500FC3719 /* SessionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SessionManager.m; sourceTree = "<group>"; };
+		8988B6311FCFB0D900FC3719 /* HTTPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPClient.h; sourceTree = "<group>"; };
+		8988B6321FCFB0D900FC3719 /* HTTPClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPClient.m; sourceTree = "<group>"; };
 		898BEEE31D37460800941321 /* NEO_AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEO_AlertView.h; sourceTree = "<group>"; };
 		898BEEE41D37460800941321 /* NEO_AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEO_AlertView.m; sourceTree = "<group>"; };
 		898FF0B71D26327B00573B01 /* mineApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mineApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1774,6 +1780,17 @@
 				89790A521D3CC02E008996E2 /* SMPageControl.m */,
 			);
 			path = SMPageControl;
+			sourceTree = "<group>";
+		};
+		8988B62D1FCFA39E00FC3719 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				8988B62E1FCFA45500FC3719 /* SessionManager.h */,
+				8988B62F1FCFA45500FC3719 /* SessionManager.m */,
+				8988B6311FCFB0D900FC3719 /* HTTPClient.h */,
+				8988B6321FCFB0D900FC3719 /* HTTPClient.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		898BEEE21D3745C100941321 /* Categery */ = {
@@ -2843,8 +2860,8 @@
 		898FF5841D29E9BB00573B01 /* Libriry */ = {
 			isa = PBXGroup;
 			children = (
+				8988B62D1FCFA39E00FC3719 /* Tools */,
 				898FF5851D29E9BC00573B01 /* Generral */,
-				898FF5881D29E9BC00573B01 /* Tools */,
 			);
 			path = Libriry;
 			sourceTree = "<group>";
@@ -2856,13 +2873,6 @@
 				898FF5871D29E9BC00573B01 /* Muser.m */,
 			);
 			path = Generral;
-			sourceTree = "<group>";
-		};
-		898FF5881D29E9BC00573B01 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tools;
 			sourceTree = "<group>";
 		};
 		89A45F091D308FEF00E3D39A /* Image1 */ = {
@@ -4141,6 +4151,7 @@
 				89ADC3B31D40948300DF75FF /* GlowImageView.m in Sources */,
 				898FF57F1D29E96F00573B01 /* NextViewController.m in Sources */,
 				895517691D6BE053008390D2 /* Next_SenvenController.m in Sources */,
+				8988B6301FCFA45500FC3719 /* SessionManager.m in Sources */,
 				895517631D6BE020008390D2 /* Next_FiveController.m in Sources */,
 				89790A4E1D3CBFD6008996E2 /* EasePageViewController.m in Sources */,
 				898FF57E1D29E96F00573B01 /* HomeViewController.m in Sources */,
@@ -4150,6 +4161,7 @@
 				89A460CF1D30A55A00E3D39A /* main.m in Sources */,
 				89ADC3BA1D4097C400DF75FF /* XHRealTimeBlur.m in Sources */,
 				898BEEE51D37460800941321 /* NEO_AlertView.m in Sources */,
+				8988B6331FCFB0D900FC3719 /* HTTPClient.m in Sources */,
 				8955176C1D6BE084008390D2 /* Next_ErghitController.m in Sources */,
 				89A460DB1D30E8AA00E3D39A /* VedioModel.m in Sources */,
 				898FF5621D29E4DC00573B01 /* NEO_NavigationController.m in Sources */,

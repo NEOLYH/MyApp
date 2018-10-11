@@ -9,7 +9,7 @@
 #ifndef Contant_h
 #define Contant_h
 
-#import <Masonry.h>
+#import "Masonry.h"
 
 #define kDevice_Is_iPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
 

@@ -9,7 +9,7 @@
 #define kCCellIdentifier_Time @"TimeCell"
 
 #import "TimeLineCell.h"
-#import <Masonry.h>
+#import "Masonry.h"
 
 @interface TimeLineCell()
 

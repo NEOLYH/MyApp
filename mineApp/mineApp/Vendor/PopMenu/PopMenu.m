@@ -8,7 +8,7 @@
 
 #import "PopMenu.h"
 #import "MenuButton.h"
-#import <POP.h>
+//#import <POP.h>
 
 #define MenuButtonHeight 110
 #define MenuButtonVerticalPadding 10

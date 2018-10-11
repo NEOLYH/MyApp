@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1590A7269B3255DFE8295AF4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F166E95049C0FA9A8D24C07 /* libPods.a */; };
+		18560BE020592908000158BD /* BaseSwiftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18560BDF20592908000158BD /* BaseSwiftController.swift */; };
+		18560BE22059294F000158BD /* Briger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18560BE12059294F000158BD /* Briger.swift */; };
 		891591871D66E69C004F0C9A /* TimeLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 891591861D66E69C004F0C9A /* TimeLineCell.m */; };
 		894495101D3DF9FC008AFA3A /* JDStatusBarNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 8944950B1D3DF9FC008AFA3A /* JDStatusBarNotification.m */; };
 		894495111D3DF9FC008AFA3A /* JDStatusBarStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8944950D1D3DF9FC008AFA3A /* JDStatusBarStyle.m */; };
@@ -828,11 +829,16 @@
 		89ADC85E1D42078A00DF75FF /* NEO_ShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89ADC85D1D42078A00DF75FF /* NEO_ShareView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -Wno-shorten-64-to-32"; }; };
 		89AF12001D34C91E0046F04C /* userHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AF11FF1D34C91E0046F04C /* userHeaderView.m */; };
 		89E987741D2B40BB001969FF /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E987731D2B40BB001969FF /* Login.storyboard */; };
+		BF8D2EDFF63DC2A973DBD8B6 /* Pods_mineApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8054E6158B12091B33E5DB05 /* Pods_mineApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0BBD4FD08ADBD0985A01F39A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		5F166E95049C0FA9A8D24C07 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C8B232A0B9C9C2BC375A6DE /* Pods-mineApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mineApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mineApp/Pods-mineApp.debug.xcconfig"; sourceTree = "<group>"; };
+		18560BDF20592908000158BD /* BaseSwiftController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSwiftController.swift; sourceTree = "<group>"; };
+		18560BE12059294F000158BD /* Briger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Briger.swift; sourceTree = "<group>"; };
+		18560BE520592C2E000158BD /* SDCAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDCAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18560BEB20593791000158BD /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		8054E6158B12091B33E5DB05 /* Pods_mineApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mineApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		891591851D66E69C004F0C9A /* TimeLineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineCell.h; sourceTree = "<group>"; };
 		891591861D66E69C004F0C9A /* TimeLineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineCell.m; sourceTree = "<group>"; };
 		8944950A1D3DF9FC008AFA3A /* JDStatusBarNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDStatusBarNotification.h; sourceTree = "<group>"; };
@@ -1704,7 +1710,7 @@
 		89AF11FE1D34C91E0046F04C /* userHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = userHeaderView.h; sourceTree = "<group>"; };
 		89AF11FF1D34C91E0046F04C /* userHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = userHeaderView.m; sourceTree = "<group>"; };
 		89E987731D2B40BB001969FF /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		DE487165E9D96230D7CBE1CC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		98FC595422A0368EF5C6341D /* Pods-mineApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mineApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-mineApp/Pods-mineApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1712,22 +1718,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1590A7269B3255DFE8295AF4 /* libPods.a in Frameworks */,
+				BF8D2EDFF63DC2A973DBD8B6 /* Pods_mineApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0E30793662864E5649DB68E9 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0BBD4FD08ADBD0985A01F39A /* Pods.debug.xcconfig */,
-				DE487165E9D96230D7CBE1CC /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		894495091D3DF9FC008AFA3A /* JDStatusBarNotification */ = {
 			isa = PBXGroup;
 			children = (
@@ -1811,8 +1808,8 @@
 			children = (
 				898FF0B91D26327B00573B01 /* mineApp */,
 				898FF0B81D26327B00573B01 /* Products */,
-				0E30793662864E5649DB68E9 /* Pods */,
-				E4D9011F8538D5BB35A5DB47 /* Frameworks */,
+				90B75B135C76AACCB927D49A /* Pods */,
+				90765956B1599AC701B4CBEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2747,12 +2744,15 @@
 		898FF55B1D29E48F00573B01 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				18560BDF20592908000158BD /* BaseSwiftController.swift */,
+				18560BE12059294F000158BD /* Briger.swift */,
 				898FF55C1D29E4DC00573B01 /* NEO_NavigationController.h */,
 				898FF55D1D29E4DC00573B01 /* NEO_NavigationController.m */,
 				898FF55E1D29E4DC00573B01 /* NEO_TabBarController.h */,
 				898FF55F1D29E4DC00573B01 /* NEO_TabBarController.m */,
 				898FF5601D29E4DC00573B01 /* NEO_ViewController.h */,
 				898FF5611D29E4DC00573B01 /* NEO_ViewController.m */,
+				18560BEB20593791000158BD /* Bridging-Header.h */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -3224,12 +3224,22 @@
 			path = StoryBoard;
 			sourceTree = "<group>";
 		};
-		E4D9011F8538D5BB35A5DB47 /* Frameworks */ = {
+		90765956B1599AC701B4CBEE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5F166E95049C0FA9A8D24C07 /* libPods.a */,
+				18560BE520592C2E000158BD /* SDCAutoLayout.framework */,
+				8054E6158B12091B33E5DB05 /* Pods_mineApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90B75B135C76AACCB927D49A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C8B232A0B9C9C2BC375A6DE /* Pods-mineApp.debug.xcconfig */,
+				98FC595422A0368EF5C6341D /* Pods-mineApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -3239,12 +3249,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 898FF0CE1D26327B00573B01 /* Build configuration list for PBXNativeTarget "mineApp" */;
 			buildPhases = (
-				26D50BB058A7B617F82EC0E2 /* Check Pods Manifest.lock */,
+				F57ED51757FD9ED174729A82 /* [CP] Check Pods Manifest.lock */,
 				898FF0B31D26327B00573B01 /* Sources */,
 				898FF0B41D26327B00573B01 /* Frameworks */,
 				898FF0B51D26327B00573B01 /* Resources */,
-				8A6FE69B2648126F8C8A2855 /* Embed Pods Frameworks */,
-				1342CEE4187AE955B041835C /* Copy Pods Resources */,
+				3D49BDC6B10A43653033DAF4 /* [CP] Embed Pods Frameworks */,
+				BED06F471542BA0DE1D53A4B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -4071,49 +4081,95 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1342CEE4187AE955B041835C /* Copy Pods Resources */ = {
+		3D49BDC6B10A43653033DAF4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mineApp/Pods-mineApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/APParallaxHeader/APParallaxHeader.framework",
+				"${BUILT_PRODUCTS_DIR}/BarrageRenderer/BarrageRenderer.framework",
+				"${BUILT_PRODUCTS_DIR}/BlocksKit/BlocksKit.framework",
+				"${BUILT_PRODUCTS_DIR}/JazzHands/JazzHands.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/NYXImagesKit/NYXImagesKit.framework",
+				"${BUILT_PRODUCTS_DIR}/RBBAnimation/RBBAnimation.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/SDCAlertView/SDCAlertView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDCAutoLayout/SDCAutoLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SSKeychain/SSKeychain.framework",
+				"${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework",
+				"${BUILT_PRODUCTS_DIR}/TMCache/TMCache.framework",
+				"${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/iVersion/iVersion.framework",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/APParallaxHeader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BarrageRenderer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BlocksKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JazzHands.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NYXImagesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RBBAnimation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCAlertView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCAutoLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSKeychain.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkeletonView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TMCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTTAttributedLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iVersion.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mineApp/Pods-mineApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		26D50BB058A7B617F82EC0E2 /* Check Pods Manifest.lock */ = {
+		BED06F471542BA0DE1D53A4B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mineApp/Pods-mineApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8A6FE69B2648126F8C8A2855 /* Embed Pods Frameworks */ = {
+		F57ED51757FD9ED174729A82 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mineApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -4123,6 +4179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18560BE020592908000158BD /* BaseSwiftController.swift in Sources */,
 				89790A531D3CC02E008996E2 /* SMPageControl.m in Sources */,
 				89A460D11D30A55A00E3D39A /* ViewController.m in Sources */,
 				895517601D6BE002008390D2 /* Next_FourController.m in Sources */,
@@ -4150,6 +4207,7 @@
 				8976236D1D4B3D580004E44B /* UIView+Common.m in Sources */,
 				89ADC3B31D40948300DF75FF /* GlowImageView.m in Sources */,
 				898FF57F1D29E96F00573B01 /* NextViewController.m in Sources */,
+				18560BE22059294F000158BD /* Briger.swift in Sources */,
 				895517691D6BE053008390D2 /* Next_SenvenController.m in Sources */,
 				8988B6301FCFA45500FC3719 /* SessionManager.m in Sources */,
 				895517631D6BE020008390D2 /* Next_FiveController.m in Sources */,
@@ -4228,6 +4286,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -4264,42 +4323,43 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		898FF0CF1D26327B00573B01 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BBD4FD08ADBD0985A01F39A /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 0C8B232A0B9C9C2BC375A6DE /* Pods-mineApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 694LG5K33D;
-				GCC_PREFIX_HEADER = /Users/Desktop/Documents/GitHub/MyApp/mineApp/mineApp/Common/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/mineApp/Common/PrefixHeader.pch";
 				INFOPLIST_FILE = mineApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = neo.mineApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "mineApp/Section/classFounction/mineApp-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/apple/Desktop/NEOLYH/MyApp/mineApp/mineApp/Base/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		898FF0D01D26327B00573B01 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE487165E9D96230D7CBE1CC /* Pods.release.xcconfig */;
+			baseConfigurationReference = 98FC595422A0368EF5C6341D /* Pods-mineApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 694LG5K33D;
-				GCC_PREFIX_HEADER = /Users/Desktop/Documents/GitHub/MyApp/mineApp/mineApp/Common/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/mineApp/Common/PrefixHeader.pch";
 				INFOPLIST_FILE = mineApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = neo.mineApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "mineApp/Section/classFounction/mineApp-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/apple/Desktop/NEOLYH/MyApp/mineApp/mineApp/Base/Bridging-Header.h";
 			};
 			name = Release;
 		};
